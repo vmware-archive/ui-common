@@ -2,7 +2,7 @@
   "name": "@octarine/ui-common",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "dist/ui-common.js",
   "dependencies": {
     "@babel/core": "7.7.7",
     "@babel/plugin-proposal-class-properties": "7.7.4",
@@ -44,8 +44,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "webpack --mode=production",
     "build": "npm run build:types && npm run build:js",
-    "prepublish": "rm -rf ./dist && npm run build:js",
-    "postinstall": "npm run build:js"
+    "prepublish": "rm -rf ./dist && npm run build:js"
   },
   "author": "",
   "license": "ISC"
