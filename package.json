@@ -44,7 +44,8 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "webpack --mode=production",
     "build": "npm run build:types && npm run build:js",
-    "prepublish": "rm -rf ./dist && npm run build:js"
+    "git-publish": "git add --all . && git commit -m \"publish\" && git push origin master",
+    "publish": "rm -rf ./dist && npm run build:js && npm run git-publish"
   },
   "author": "",
   "license": "ISC"
