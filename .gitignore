@@ -1,0 +1,10 @@
+node_modules
+dist
+package-lock.json
+.idea
+.DS_Store
+src/**/*.css
+.env.development.local
+.env.production.local
+.env.test.local
+.env.local
